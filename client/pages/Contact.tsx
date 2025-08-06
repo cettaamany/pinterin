@@ -5,30 +5,32 @@ import Footer from "@/components/Footer";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    message: ''
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Handle form submission here
   };
 
   return (
     <div className="min-h-screen bg-pinterin-cream">
       <Header activeLink="contact" />
-      
+
       {/* Main Content */}
       <main className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +40,8 @@ export default function Contact() {
               Greetings!
             </h1>
             <p className="text-lg lg:text-xl text-pinterin-blue max-w-3xl mx-auto leading-relaxed">
-              Thank you for using our service, we wish you good luck on your up coming exam, if you have any question please let us know!
+              Thank you for using our service, we wish you good luck on your up
+              coming exam, if you have any question please let us know!
             </p>
           </div>
 
@@ -51,14 +54,18 @@ export default function Contact() {
                   Questions? Don't hesitate to contact us!
                 </h2>
                 <p className="text-lg lg:text-xl text-pinterin-blue">
-                  We'll get back to you as soon as possible through email or a call.
+                  We'll get back to you as soon as possible through email or a
+                  call.
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-8">
                 {/* Full Name Field */}
                 <div>
-                  <label htmlFor="fullName" className="block text-xl font-normal text-black mb-3">
+                  <label
+                    htmlFor="fullName"
+                    className="block text-xl font-normal text-black mb-3"
+                  >
                     Full Name
                   </label>
                   <input
@@ -75,7 +82,10 @@ export default function Contact() {
 
                 {/* Email Field */}
                 <div>
-                  <label htmlFor="email" className="block text-xl font-normal text-black mb-3">
+                  <label
+                    htmlFor="email"
+                    className="block text-xl font-normal text-black mb-3"
+                  >
                     Email
                   </label>
                   <input
@@ -92,7 +102,10 @@ export default function Contact() {
 
                 {/* Phone Number Field */}
                 <div>
-                  <label htmlFor="phoneNumber" className="block text-xl font-normal text-black mb-3">
+                  <label
+                    htmlFor="phoneNumber"
+                    className="block text-xl font-normal text-black mb-3"
+                  >
                     Phone Number
                   </label>
                   <input
@@ -109,7 +122,10 @@ export default function Contact() {
 
                 {/* Message Field */}
                 <div>
-                  <label htmlFor="message" className="block text-xl font-normal text-black mb-3">
+                  <label
+                    htmlFor="message"
+                    className="block text-xl font-normal text-black mb-3"
+                  >
                     Message
                   </label>
                   <textarea
@@ -126,7 +142,7 @@ export default function Contact() {
 
                 {/* Submit Button */}
                 <div className="text-center pt-4">
-                  <Button 
+                  <Button
                     type="submit"
                     className="bg-pinterin-dark-blue hover:bg-pinterin-blue text-white rounded-full px-8 py-4 text-xl lg:text-2xl min-w-[193px]"
                   >
@@ -144,16 +160,31 @@ export default function Contact() {
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Technical Support</h4>
-                <p className="text-pinterin-text-muted">Get help with platform issues, login problems, or technical difficulties</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Technical Support
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  Get help with platform issues, login problems, or technical
+                  difficulties
+                </p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Exam Guidance</h4>
-                <p className="text-pinterin-text-muted">Questions about SAT/UTBK preparation, study plans, and exam strategies</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Exam Guidance
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  Questions about SAT/UTBK preparation, study plans, and exam
+                  strategies
+                </p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Account & Billing</h4>
-                <p className="text-pinterin-text-muted">Subscription questions, payment issues, and account management support</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Account & Billing
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  Subscription questions, payment issues, and account management
+                  support
+                </p>
               </div>
             </div>
           </div>

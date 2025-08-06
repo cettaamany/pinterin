@@ -23,8 +23,12 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xl font-bold">© 2025 Pinterin</p>
             <div className="flex gap-8">
-              <a href="#" className="text-xl font-bold hover:underline">Support & Help</a>
-              <a href="#" className="text-xl font-bold hover:underline">Terms & Privacy</a>
+              <a href="#" className="text-xl font-bold hover:underline">
+                Support & Help
+              </a>
+              <a href="#" className="text-xl font-bold hover:underline">
+                Terms & Privacy
+              </a>
             </div>
           </div>
         </div>

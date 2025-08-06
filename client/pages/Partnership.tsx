@@ -5,30 +5,32 @@ import Footer from "@/components/Footer";
 
 export default function Partnership() {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    message: ''
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Handle form submission here
   };
 
   return (
     <div className="min-h-screen bg-pinterin-cream">
       <Header activeLink="partnership" />
-      
+
       {/* Main Content */}
       <main className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +40,9 @@ export default function Partnership() {
               For Partnership
             </h1>
             <p className="text-lg lg:text-xl text-pinterin-blue max-w-3xl mx-auto leading-relaxed">
-              To receive information about collaboration discussions and our corporate packages, you can use the contact details below or fill out the form to reach us.
+              To receive information about collaboration discussions and our
+              corporate packages, you can use the contact details below or fill
+              out the form to reach us.
             </p>
           </div>
 
@@ -48,7 +52,10 @@ export default function Partnership() {
               <form onSubmit={handleSubmit} className="space-y-8">
                 {/* Full Name Field */}
                 <div>
-                  <label htmlFor="fullName" className="block text-xl font-normal text-black mb-3">
+                  <label
+                    htmlFor="fullName"
+                    className="block text-xl font-normal text-black mb-3"
+                  >
                     Full Name
                   </label>
                   <input
@@ -65,7 +72,10 @@ export default function Partnership() {
 
                 {/* Email Field */}
                 <div>
-                  <label htmlFor="email" className="block text-xl font-normal text-black mb-3">
+                  <label
+                    htmlFor="email"
+                    className="block text-xl font-normal text-black mb-3"
+                  >
                     Email
                   </label>
                   <input
@@ -82,7 +92,10 @@ export default function Partnership() {
 
                 {/* Phone Number Field */}
                 <div>
-                  <label htmlFor="phoneNumber" className="block text-xl font-normal text-black mb-3">
+                  <label
+                    htmlFor="phoneNumber"
+                    className="block text-xl font-normal text-black mb-3"
+                  >
                     Phone Number
                   </label>
                   <input
@@ -99,7 +112,10 @@ export default function Partnership() {
 
                 {/* Message Field */}
                 <div>
-                  <label htmlFor="message" className="block text-xl font-normal text-black mb-3">
+                  <label
+                    htmlFor="message"
+                    className="block text-xl font-normal text-black mb-3"
+                  >
                     Message
                   </label>
                   <textarea
@@ -116,7 +132,7 @@ export default function Partnership() {
 
                 {/* Submit Button */}
                 <div className="text-center pt-4">
-                  <Button 
+                  <Button
                     type="submit"
                     className="bg-pinterin-dark-blue hover:bg-pinterin-blue text-white rounded-full px-8 py-4 text-xl lg:text-2xl min-w-[152px]"
                   >
@@ -134,16 +150,31 @@ export default function Partnership() {
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Educational Institutions</h4>
-                <p className="text-pinterin-text-muted">Partner with us to provide comprehensive SAT and UTBK preparation for your students</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Educational Institutions
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  Partner with us to provide comprehensive SAT and UTBK
+                  preparation for your students
+                </p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Corporate Training</h4>
-                <p className="text-pinterin-text-muted">Bulk packages and custom solutions for organizations and training centers</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Corporate Training
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  Bulk packages and custom solutions for organizations and
+                  training centers
+                </p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Technology Integration</h4>
-                <p className="text-pinterin-text-muted">API access and white-label solutions for educational technology platforms</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Technology Integration
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  API access and white-label solutions for educational
+                  technology platforms
+                </p>
               </div>
             </div>
           </div>

@@ -4,12 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function Pricing() {
-  const [activeTab, setActiveTab] = useState<'SAT' | 'UTBK'>('SAT');
+  const [activeTab, setActiveTab] = useState<"SAT" | "UTBK">("SAT");
 
   return (
     <div className="min-h-screen bg-pinterin-cream">
       <Header activeLink="pricing" />
-      
+
       {/* Main Content */}
       <main className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,21 +17,21 @@ export default function Pricing() {
           <div className="flex justify-center mb-12">
             <div className="flex gap-4">
               <button
-                onClick={() => setActiveTab('SAT')}
+                onClick={() => setActiveTab("SAT")}
                 className={`px-8 py-3 rounded-2xl text-2xl lg:text-3xl font-medium transition-all duration-300 shadow-lg min-w-[175px] ${
-                  activeTab === 'SAT'
-                    ? 'bg-pinterin-purple text-white'
-                    : 'bg-pinterin-cream text-pinterin-purple border border-gray-200'
+                  activeTab === "SAT"
+                    ? "bg-pinterin-purple text-white"
+                    : "bg-pinterin-cream text-pinterin-purple border border-gray-200"
                 }`}
               >
                 SAT
               </button>
               <button
-                onClick={() => setActiveTab('UTBK')}
+                onClick={() => setActiveTab("UTBK")}
                 className={`px-8 py-3 rounded-2xl text-2xl lg:text-3xl font-medium transition-all duration-300 shadow-lg min-w-[175px] ${
-                  activeTab === 'UTBK'
-                    ? 'bg-pinterin-purple text-white'
-                    : 'bg-pinterin-cream text-pinterin-purple border border-gray-200'
+                  activeTab === "UTBK"
+                    ? "bg-pinterin-purple text-white"
+                    : "bg-pinterin-cream text-pinterin-purple border border-gray-200"
                 }`}
               >
                 UTBK
@@ -58,7 +58,11 @@ export default function Pricing() {
                 </Button>
                 <div className="text-lg text-pinterin-text-muted leading-relaxed text-justify">
                   <p>
-                    Perfect for daily practice sessions. Get access to curated questions, instant feedback, and basic performance tracking. Ideal for students who want to maintain consistent study habits with flexible daily access to our {activeTab} preparation materials.
+                    Perfect for daily practice sessions. Get access to curated
+                    questions, instant feedback, and basic performance tracking.
+                    Ideal for students who want to maintain consistent study
+                    habits with flexible daily access to our {activeTab}{" "}
+                    preparation materials.
                   </p>
                 </div>
               </div>
@@ -81,7 +85,11 @@ export default function Pricing() {
                 </Button>
                 <div className="text-lg text-pinterin-text-muted leading-relaxed text-justify">
                   <p>
-                    Comprehensive monthly access with full features. Includes unlimited practice tests, detailed analytics, personalized study plans, and progress tracking. Best value for serious {activeTab} preparation with complete access to all learning materials and features.
+                    Comprehensive monthly access with full features. Includes
+                    unlimited practice tests, detailed analytics, personalized
+                    study plans, and progress tracking. Best value for serious{" "}
+                    {activeTab} preparation with complete access to all learning
+                    materials and features.
                   </p>
                 </div>
               </div>
@@ -95,16 +103,28 @@ export default function Pricing() {
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Practice Tests</h4>
-                <p className="text-pinterin-text-muted">Full-length practice exams with real question formats</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Practice Tests
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  Full-length practice exams with real question formats
+                </p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Performance Analytics</h4>
-                <p className="text-pinterin-text-muted">Detailed insights into your strengths and weaknesses</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Performance Analytics
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  Detailed insights into your strengths and weaknesses
+                </p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h4 className="font-semibold text-pinterin-dark-blue mb-2">Study Materials</h4>
-                <p className="text-pinterin-text-muted">Comprehensive review guides and practice questions</p>
+                <h4 className="font-semibold text-pinterin-dark-blue mb-2">
+                  Study Materials
+                </h4>
+                <p className="text-pinterin-text-muted">
+                  Comprehensive review guides and practice questions
+                </p>
               </div>
             </div>
           </div>
