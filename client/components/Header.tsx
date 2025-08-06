@@ -51,7 +51,14 @@ export default function Header({ activeLink }: HeaderProps) {
             >
               Partnership
             </a>
-            <a href="#" className="text-pinterin-dark-blue hover:text-pinterin-blue transition-colors">Contact</a>
+            <a
+              href="/contact"
+              className={`text-pinterin-dark-blue hover:text-pinterin-blue transition-colors ${
+                activeLink === 'contact' ? 'underline' : ''
+              }`}
+            >
+              Contact
+            </a>
             <a href="#" className="text-pinterin-dark-blue hover:text-pinterin-blue transition-colors">Login</a>
             <Button className="bg-pinterin-dark-blue hover:bg-pinterin-blue text-white rounded-full px-6">
               Sign Up
