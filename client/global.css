@@ -54,6 +54,13 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Pinterin brand colors */
+    --pinterin-cream: 58 100% 98.8%;
+    --pinterin-blue: 216 79% 27%;
+    --pinterin-dark-blue: 216 75% 15%;
+    --pinterin-purple: 254 85% 47%;
+    --pinterin-text-muted: 210 23% 49%;
   }
 
   .dark {
@@ -92,6 +99,13 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Pinterin brand colors - dark mode */
+    --pinterin-cream: 58 100% 98.8%;
+    --pinterin-blue: 216 79% 27%;
+    --pinterin-dark-blue: 216 75% 15%;
+    --pinterin-purple: 254 85% 47%;
+    --pinterin-text-muted: 210 23% 49%;
   }
 }
 
