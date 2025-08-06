@@ -27,15 +27,22 @@ export default function Header({ activeLink }: HeaderProps) {
             >
               Home
             </a>
-            <a 
-              href="/exam" 
+            <a
+              href="/exam"
               className={`text-pinterin-dark-blue hover:text-pinterin-blue transition-colors ${
                 activeLink === 'exam' ? 'underline' : ''
               }`}
             >
               Exam
             </a>
-            <a href="#" className="text-pinterin-dark-blue hover:text-pinterin-blue transition-colors">Pricing</a>
+            <a
+              href="/pricing"
+              className={`text-pinterin-dark-blue hover:text-pinterin-blue transition-colors ${
+                activeLink === 'pricing' ? 'underline' : ''
+              }`}
+            >
+              Pricing
+            </a>
             <a href="#" className="text-pinterin-dark-blue hover:text-pinterin-blue transition-colors">Partnership</a>
             <a href="#" className="text-pinterin-dark-blue hover:text-pinterin-blue transition-colors">Contact</a>
             <a href="#" className="text-pinterin-dark-blue hover:text-pinterin-blue transition-colors">Login</a>
