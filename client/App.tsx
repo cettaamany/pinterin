@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Exam from "./pages/Exam";
 import Pricing from "./pages/Pricing";
 import Partnership from "./pages/Partnership";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
