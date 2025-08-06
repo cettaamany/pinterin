@@ -24,6 +24,7 @@ export default function App() {
           <Route path="/exam" element={<Exam />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/partnership" element={<Partnership />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
