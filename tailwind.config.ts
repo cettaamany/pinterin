@@ -57,6 +57,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        pinterin: {
+          cream: "hsl(var(--pinterin-cream))",
+          blue: "hsl(var(--pinterin-blue))",
+          "dark-blue": "hsl(var(--pinterin-dark-blue))",
+          purple: "hsl(var(--pinterin-purple))",
+          "text-muted": "hsl(var(--pinterin-text-muted))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
